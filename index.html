@@ -55,13 +55,14 @@
 
     <!-- donation card -->
     <section class="mt-20 w-[1200px] mx-auto mb-20">
+        <!-- noakhali -->
         <div class="card lg:card-side bg-base-100 shadow-xl p-8 border border-gray-200 items-center ">
             <figure>
                 <img src="assets/noakhali.png" alt="">
             </figure>
             <div class="w-2/4  mx-auto  ">
                 <p class="btn btn-primary bg-gray-100 text-gray-700 font-medium btn btn-active btn-ghost text-lg "><span class="text-yellow-500 text-2xl">৳</span>
-                    <span class="" id="noakhali">0</span> BDT</p>
+                    <span id="noakhaliAmount">100</span> BDT</p>
 
 
                 <h2 class="card-title mt-4 text-xl">Donate for Flood at Noakhali, Bangladesh</h2>
@@ -70,29 +71,31 @@
                     or small, makes difference. Please join us in supporting the relief efforts and making a positive
                     impact on the lives of those in need.</p>
 
-                <input type="number" placeholder="Write Donation Amount" class="input input-bordered w-full mt-3" />
+                <input id="noakhaliInput" type="number" placeholder="Write Donation Amount" class="input input-bordered w-full mt-3" />
 
                 <div class="card-actions">
                     <button id="noakhaliBtn" class="btn btn-primary btn-ghost w-full text-xl text-black mt-3 bg-[#B4F461] border border-transparent">Donate Now</button>
                 </div>
             </div>
         </div>
+
+        <!-- feni -->
         <div class="card lg:card-side bg-base-100 shadow-xl p-8 border border-gray-200 items-center mt-9">
             <figure>
                 <img src="assets/feni.png" alt="">
             </figure>
             <div class="w-2/4  mx-auto  ">
                 <p class="btn btn-primary bg-gray-100 text-gray-700 font-medium btn btn-active btn-ghost text-lg "> <span class="text-yellow-500 text-2xl">৳</span>
-                    <span class="" id="noakhali">600</span> BDT</p>
+                    <span class="" id="laxAmount">600</span> BDT</p>
 
 
                 <h2 class="card-title mt-4 text-xl">Donate for Flood Relief in Lakshmipur,Bangladesh</h2>
                 <p class="mt-3 text-gray-400 font-light">The recent floods in Lakshmipur have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
 
-                <input type="number" placeholder="Write Donation Amount" class="input input-bordered w-full mt-3" />
+                <input id="laxInput" type="number" placeholder="Write Donation Amount" class="input input-bordered w-full mt-3" />
 
                 <div class="card-actions">
-                    <button class="btn btn-primary btn-ghost w-full text-xl text-black mt-3 bg-[#B4F461] border border-transparent">Donate Now</button>
+                    <button id="laxBtn" class="btn btn-primary btn-ghost w-full text-xl text-black mt-3 bg-[#B4F461] border border-transparent">Donate Now</button>
                 </div>
             </div>
         </div>
@@ -102,16 +105,16 @@
             </figure>
             <div class="w-2/4  mx-auto  ">
                 <p class="btn btn-primary bg-gray-100 text-gray-700 font-medium btn btn-active btn-ghost text-lg "><span class="text-yellow-500 text-2xl">৳</span>
-                    <span class="" id="noakhali">2400</span> BDT</p>
+                    <span id="quotaAmount">2400</span> BDT</p>
 
 
                 <h2 class="card-title mt-4 text-xl">Aid for Injured in the Quota Movement</h2>
                 <p class="mt-3 text-gray-400 font-light">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
 
-                <input type="number" placeholder="Write Donation Amount" class="input input-bordered w-full mt-3" />
+                <input id="quotaInput" type="number" placeholder="Write Donation Amount" class="input input-bordered w-full mt-3" />
 
                 <div class="card-actions">
-                    <button class="btn btn-primary btn-ghost w-full text-xl text-black mt-3 bg-[#B4F461] border border-transparent">Donate Now</button>
+                    <button id="quotaBtn" class="btn btn-primary btn-ghost w-full text-xl text-black mt-3 bg-[#B4F461] border border-transparent">Donate Now</button>
                 </div>
             </div>
         </div>
@@ -122,6 +125,9 @@
 
     <!-- history -->
     <section class="mt-20 w-[1200px] mx-auto mb-20">
+        <div id="historyTab" class="hidden">
+
+        </div>
 
 
         
