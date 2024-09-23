@@ -17,7 +17,7 @@ noakhaliBtn.addEventListener('click', function () {
 
     // validation
 
-    if (noakhaliInput <= 0 || isNaN(noakhaliInput)) {
+    if (noakhaliInput <= 0 || isNaN(noakhaliInput) || noakhaliInput> wallet) {
         document.getElementById('noakhali-error').classList.remove('hidden')
         return
 
@@ -83,7 +83,7 @@ laxBtn.addEventListener('click', function () {
 
     // validation
 
-    if (laxInput <= 0 || isNaN(laxInput)) {
+    if (laxInput <= 0 || isNaN(laxInput) || laxInput > wallet) {
         document.getElementById('lax-error').classList.remove('hidden')
         return
 
@@ -135,7 +135,7 @@ quotaBtn.addEventListener('click', function () {
 
     // validation
 
-    if (quotaInput <= 0 || isNaN(quotaInput)) {
+    if (quotaInput <= 0 || isNaN(quotaInput) || quotaInput > wallet) {
         document.getElementById('quota-error').classList.remove('hidden')
         return
 
