@@ -17,15 +17,29 @@ noakhaliBtn.addEventListener('click', function () {
 
     // validation
 
-    if (noakhaliInput <=0 || isNaN(noakhaliInput)) {
+    if (noakhaliInput <= 0 || isNaN(noakhaliInput)) {
         document.getElementById('noakhali-error').classList.remove('hidden')
         return
 
     }
-    else{
+    else {
         document.getElementById('noakhali-error').classList.add('hidden')
+        // alert('Congrats! You have donated Successfully!')
+
+        // modal
+        const modal = document.getElementById('my_modal');
+        const modalAmount = document.getElementById('modalNoakhali')
+        modalAmount.innerText = noakhaliInput
+        modal.showModal();
+
+        
+
+        
+        
     }
-   
+    
+    
+
 
 
     const newBalance = wallet - noakhaliInput;
@@ -69,13 +83,18 @@ laxBtn.addEventListener('click', function () {
 
     // validation
 
-    if (laxInput <=0 || isNaN(laxInput)) {
+    if (laxInput <= 0 || isNaN(laxInput)) {
         document.getElementById('lax-error').classList.remove('hidden')
         return
 
     }
-    else{
+    else {
         document.getElementById('lax-error').classList.add('hidden')
+        // modal
+        const modal = document.getElementById('my_modal2');
+        const modalAmount = document.getElementById('modallax')
+        modalAmount.innerText = laxInput
+        modal.showModal();
     }
 
     const newBalance = wallet - laxInput;
@@ -113,16 +132,21 @@ quotaBtn.addEventListener('click', function () {
     const inputquota = document.getElementById('quotaInput')
     const wallet = parseFloat(document.getElementById('balance').innerText)
     const balance = document.getElementById('balance')
-    
+
     // validation
 
-    if (quotaInput <=0 || isNaN(quotaInput)) {
+    if (quotaInput <= 0 || isNaN(quotaInput)) {
         document.getElementById('quota-error').classList.remove('hidden')
         return
 
     }
-    else{
+    else {
         document.getElementById('quota-error').classList.add('hidden')
+        // modal
+        const modal = document.getElementById('my_modal3');
+        const modalAmount = document.getElementById('modalquota')
+        modalAmount.innerText = quotaInput
+        modal.showModal();
     }
 
     const newBalance = wallet - quotaInput;
