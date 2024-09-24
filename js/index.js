@@ -1,7 +1,8 @@
-// global function
+// common function
 function getInputValueById(id) {
     return parseFloat(document.getElementById(id).value)
 }
+
 
 
 // noakhali
@@ -9,7 +10,8 @@ function getInputValueById(id) {
 const noakhaliBtn = document.getElementById('noakhaliBtn')
 noakhaliBtn.addEventListener('click', function () {
     const noakhaliDonatedAmount = parseFloat(document.getElementById('noakhaliAmount').innerText)
-    const noakhaliInput = parseFloat(document.getElementById('noakhaliInput').value)
+    // const noakhaliInput = parseFloat(document.getElementById('noakhaliInput').value)
+    const noakhaliInput = getInputValueById('noakhaliInput')
     const inputNoakhali = document.getElementById('noakhaliInput')
     const wallet = parseFloat(document.getElementById('balance').innerText)
     const balance = document.getElementById('balance')
@@ -82,7 +84,8 @@ noakhaliBtn.addEventListener('click', function () {
 const laxBtn = document.getElementById('laxBtn')
 laxBtn.addEventListener('click', function () {
     const laxDonatedAmount = parseFloat(document.getElementById('laxAmount').innerText)
-    const laxInput = parseFloat(document.getElementById('laxInput').value)
+    // const laxInput = parseFloat(document.getElementById('laxInput').value)
+    const laxInput = getInputValueById('laxInput')
     const inputlax = document.getElementById('laxInput')
     const wallet = parseFloat(document.getElementById('balance').innerText)
     const balance = document.getElementById('balance')
@@ -145,7 +148,9 @@ laxBtn.addEventListener('click', function () {
 const quotaBtn = document.getElementById('quotaBtn')
 quotaBtn.addEventListener('click', function () {
     const quotaDonatedAmount = parseFloat(document.getElementById('quotaAmount').innerText)
-    const quotaInput = parseFloat(document.getElementById('quotaInput').value)
+    // const quotaInput = parseFloat(document.getElementById('quotaInput').value)
+    const quotaInput = getInputValueById('quotaInput')
+
     const inputquota = document.getElementById('quotaInput')
     const wallet = parseFloat(document.getElementById('balance').innerText)
     const balance = document.getElementById('balance')
@@ -239,10 +244,10 @@ donationMenu.addEventListener('click', function () {
 
 // blog btn
 
-// document.getElementById('blogBtn').addEventListener('click', function(event){
+document.getElementById('blogBtn').addEventListener('click', function(event){
     
-//     window.location.href = '/blog.html'
-// })
+    window.location.href = './blog.html'
+})
 
 
 
