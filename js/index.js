@@ -43,10 +43,6 @@ noakhaliBtn.addEventListener('click', function () {
         modalAmount.innerText = noakhaliInput
         modal.showModal();
 
-        
-
-        
-        
     }
     
     
@@ -252,3 +248,43 @@ document.getElementById('blogBtn').addEventListener('click', function(event){
 
 
 
+// live Validation
+// noakhali
+document.getElementById('noakhaliInput').addEventListener('input', function(){
+    const inputValue = parseFloat(document.getElementById('noakhaliInput').value)
+
+    if (inputValue <= 0 || isNaN(inputValue)) {
+        document.getElementById('noakhali-error').classList.remove('hidden')
+        return
+
+    }
+    else {
+        document.getElementById('noakhali-error').classList.add('hidden')}
+
+})
+
+// lakshmipur
+document.getElementById('laxInput').addEventListener('input', function(){
+    const inputValue = parseFloat(document.getElementById('laxInput').value)
+
+    if (inputValue <= 0 || isNaN(inputValue)) {
+        document.getElementById('lax-error').classList.remove('hidden')
+        return
+
+    }
+    else {
+        document.getElementById('lax-error').classList.add('hidden')}
+
+})
+document.getElementById('quotaInput').addEventListener('input', function(){
+    const inputValue = parseFloat(document.getElementById('quotaInput').value)
+
+    if (inputValue <= 0 || isNaN(inputValue)) {
+        document.getElementById('quota-error').classList.remove('hidden')
+        return
+
+    }
+    else {
+        document.getElementById('quota-error').classList.add('hidden')}
+
+})
