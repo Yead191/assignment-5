@@ -17,7 +17,18 @@ noakhaliBtn.addEventListener('click', function () {
 
     // validation
 
-    if (noakhaliInput <= 0 || isNaN(noakhaliInput) || noakhaliInput> wallet) {
+    if (noakhaliInput> wallet) {
+        document.getElementById('logic-error1').classList.remove('hidden')
+        return
+        
+    }
+    else{
+        document.getElementById('logic-error1').classList.add('hidden')
+
+
+    }
+
+    if (noakhaliInput <= 0 || isNaN(noakhaliInput)) {
         document.getElementById('noakhali-error').classList.remove('hidden')
         return
 
@@ -83,7 +94,18 @@ laxBtn.addEventListener('click', function () {
 
     // validation
 
-    if (laxInput <= 0 || isNaN(laxInput) || laxInput > wallet) {
+    if (laxInput > wallet) {
+        document.getElementById('logic-error2').classList.remove('hidden')
+        return
+        
+    }
+    else{
+        document.getElementById('logic-error2').classList.add('hidden')
+
+
+    }
+
+    if (laxInput <= 0 || isNaN(laxInput) ) {
         document.getElementById('lax-error').classList.remove('hidden')
         return
 
@@ -135,7 +157,18 @@ quotaBtn.addEventListener('click', function () {
 
     // validation
 
-    if (quotaInput <= 0 || isNaN(quotaInput) || quotaInput > wallet) {
+    if (quotaInput > wallet) {
+        document.getElementById('logic-error3').classList.remove('hidden')
+        return
+        
+    }
+    else{
+        document.getElementById('logic-error3').classList.add('hidden')
+
+
+    }
+
+    if (quotaInput <= 0 || isNaN(quotaInput) ) {
         document.getElementById('quota-error').classList.remove('hidden')
         return
 
@@ -208,6 +241,14 @@ donationMenu.addEventListener('click', function () {
 
 
 })
+
+// blog btn
+
+document.getElementById('blogBtn').addEventListener('click', function(event){
+    
+    window.location.href = '/blog.html'
+})
+
 
 
 
