@@ -1,8 +1,7 @@
-// function getInputValueById(id) {
-//     parseFloat(document.getElementById(id).value)
-
-
-// }
+// global function
+function getInputValueById(id) {
+    return parseFloat(document.getElementById(id).value)
+}
 
 
 // noakhali
@@ -240,10 +239,10 @@ donationMenu.addEventListener('click', function () {
 
 // blog btn
 
-document.getElementById('blogBtn').addEventListener('click', function(event){
+// document.getElementById('blogBtn').addEventListener('click', function(event){
     
-    window.location.href = '/blog.html'
-})
+//     window.location.href = '/blog.html'
+// })
 
 
 
